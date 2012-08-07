@@ -31,7 +31,17 @@
 	<div id="page" class="container">
 		<div id="content">
 		
-		   <p><%= yield %></p>
+		
+			<div class="post">
+				<h2 class="title"><a href="#">Article1 Title </a></h2>
+				<p class="meta"><span class="date">PostDate</span><span class="posted">Posted by <a href="#">Author</a></span></p>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+					<p><%= yield %></p>
+					<p class="links"><a href="#" class="more">Read More</a><a href="#" title="b0x" class="comments">Comments</a></p>
+				</div>
+			</div>
+			
 			
 			<div style="clear: both;">&nbsp;</div>
 		</div>
