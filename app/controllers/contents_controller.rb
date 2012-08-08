@@ -1,4 +1,5 @@
 class ContentsController < ApplicationController
+  
   def new
  	@content = Content.new
   end
@@ -16,6 +17,8 @@ class ContentsController < ApplicationController
   
   def create
 	@content = Content.new(params[:content])
+	@content.body = params[:body]
+	
 	if @content.save
 		redirect_to :action => "index"
 	else

@@ -10,7 +10,7 @@ RemarriageWorks::Application.routes.draw do
   get "pages/home"
 
 
-
+  resources :contents
 
 
   root :to => 'pages#home'

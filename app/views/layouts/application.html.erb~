@@ -14,7 +14,7 @@
 <div id="wrapper">
 	<div id="header" class="container">
 		<div id="logo">
-			<h1><a href="#">reArticles</a></h1>
+			<h1><%= link_to "reArticles" , :root %></h1>
 			<p>...a RemarriageWorks product</p>
 		</div>
 		<div id="menu">

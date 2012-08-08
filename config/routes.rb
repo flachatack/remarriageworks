@@ -1,4 +1,5 @@
 RemarriageWorks::Application.routes.draw do
+  
   get "contents/new"
 
   get "contents/show"

@@ -1,4 +1,4 @@
-<%= tinymce_assets %>
+
 <h3>New content publisher:</h3></br>
 <%= form_for(@content) do |f| %>
 	<%= f.label "Title" %></br>
@@ -7,11 +7,12 @@
 	<%= f.text_field :subtitle, :size => 94 %></br></br>
 	<%= f.label "Type (Select One):" %></br>	
 	<%= f.select :content_type, options_for_select([["Article", "article"], ["Blog", "blog"], ["Video", "video"], ["External", "external"]], @content.content_type) %></br></br>
+	<%= tinymce_assets %>
 	<%= text_area_tag :body, '', :class => "tinymce", :rows => 25, :cols => 73 %>
-	<%= tinymce() %> </br></br>
+	<%= tinymce %> </br></br>
 	<p>
 		More options will eventually go down here (tags) or  stuff you can't alter,
 		like author and publish date. Probably will add an image upload area too (for index page). 
  	</p>
-<%= f.submit "Submit", class: "more" %>
+<%= f.submit "Publish", class: "more" %>
 <% end %>

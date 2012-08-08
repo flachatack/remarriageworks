@@ -6,5 +6,17 @@ theme_advanced_buttons3_add:
   - tablecontrols
   - fullscreen
 plugins:
+  - autolink
+  - lists 
+  - spellchecker
+  - pagebreak
+  - style 
+  - layer
+  - table
+  - save
+  - advhr
+  - advimage
+  - advlink
   - table
   - fullscreen
+  - paste
