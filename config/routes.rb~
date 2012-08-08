@@ -1,4 +1,12 @@
 RemarriageWorks::Application.routes.draw do
+  get "contents/new"
+
+  get "contents/show"
+
+  get "contents/index"
+
+  get "contents/edit"
+
   get "pages/home"
 
 
@@ -6,6 +14,7 @@ RemarriageWorks::Application.routes.draw do
 
 
   root :to => 'pages#home'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

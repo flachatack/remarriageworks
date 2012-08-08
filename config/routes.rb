@@ -1,8 +1,16 @@
 RemarriageWorks::Application.routes.draw do
+  get "contents/new"
+
+  get "contents/show"
+
+  get "contents/index"
+
+  get "contents/edit"
+
   get "pages/home"
 
 
-
+  resources :contents
 
 
   root :to => 'pages#home'
