@@ -1,12 +1,3 @@
-
-@charset "UTF-8";
-/* CSS Document */
-/*This is the right one*/
-/*------------------------------------*/
-/*styles for index.html and inner.html*/
-/*------------------------------------*/
-
-
 #wrapper{
 	width:960px;
 	margin:0 auto;
@@ -45,8 +36,6 @@ color: white;
 padding: 10px 15px 10px 14px;
 text-decoration: none;
 background-color:#087876;
-
-
 }
 
 .topnav li a:hover, .topnav li .current{
@@ -67,7 +56,6 @@ width: 806px;
 background-color:#593b1d;
 padding:0px;
 margin:0;
-
 text-transform:uppercase;
 }
 
@@ -91,7 +79,10 @@ background-color:#322110;
 
 }
 
-
+.topnav_second li a:hover, .topnav li .current{
+color:#eee7e1;
+background-color:#322110;
+}
 
 /* Second Brown Navigation Starts End */
 
