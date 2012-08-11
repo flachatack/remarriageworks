@@ -1,0 +1,488 @@
+
+@charset "UTF-8";
+/* CSS Document */
+/*This is the right one*/
+/*------------------------------------*/
+/*styles for index.html and inner.html*/
+/*------------------------------------*/
+
+
+#wrapper{
+	width:960px;
+	margin:0 auto;
+	padding:0px 0px 0px 0px;
+}
+
+#header {
+padding:0px;
+margin:0px;
+}
+#spacer{
+line-height:5px;
+}
+/* Topn Green Navigation  Starts Here*/
+
+.topnav{
+position: relative;
+top:0px;
+left: 0px;
+float: left;
+font: bold 12px Arial;
+width: 806px;
+background-color:#087876;
+padding:0px;
+margin:0;
+text-transform:uppercase;
+}
+
+.topnav li{
+display: inline;
+}
+
+.topnav li a{
+float: left;
+color: white;
+padding: 10px 15px 10px 14px;
+text-decoration: none;
+background-color:#087876;
+
+
+}
+
+.topnav li a:hover, .topnav li .current{
+color:#FFFFFF;
+background-color:#024846;
+}
+
+/* Top Green Navigation Ends here */
+
+/* Second Brown Navigation Starts Here */
+.topnav_second{
+position: relative;
+top:0px;
+left: 0px;
+float: left;
+font: bold 12px Arial;
+width: 806px;
+background-color:#593b1d;
+padding:0px;
+margin:0;
+
+text-transform:uppercase;
+}
+
+.topnav_second li{
+display: inline;
+color: white;
+}
+
+.topnav_second li a{
+float: left;
+color: white;
+padding: 11px 20px 10px 21px;
+text-decoration: none;
+background-color:#593b1d;
+
+}
+
+.topnav_second li a:visited{
+color:#ffffff;
+background-color:#322110;
+
+}
+
+.topnav_second li a:hover, .topnav li .current{
+color:#eee7e1;
+
+background-color:#322110;
+}
+
+/* Second Brown Navigation Starts End */
+
+#nav_02{
+background-color:#593b1d;
+height:36px;
+padding:0px 0xp 0px 0px;
+margin:0px 0px 0px 0px;
+}
+
+#nav_02_text{
+	padding:11px 17px 0px 17px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	width:624px;
+	color:#FFF;
+	font-weight: bold;
+}
+
+#nav_02_text a{
+color: white;
+}
+
+#nav_02 img{
+position:relative;
+margin:7px 0px 0px 0px;
+}
+
+#nav_02_text a:hover{
+color:#eee7e1;
+}
+
+#search_box{
+position:relative;
+float:left;
+margin:7px 10px 0px 38px;
+}
+
+#main_content{
+	margin:5px 0px 5px 0px;
+	padding:0px;
+	valign:top;
+}
+
+#flash_content{
+	margin:0px 0px 0px 0px;
+	width:680px;
+	position:relative;
+	float:left;
+}
+
+#ads{
+position:relative;
+float:left;
+padding-left:18px;
+padding-top:1px;
+padding-bottom:3px;
+width:200px;
+height:150px;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+color:#2A5C5B;
+}
+
+#inner_content_wrapper{
+margin:10px 0px 0px 0px;
+}
+
+#article{
+position:relative;
+float:left;
+width:519px;
+padding:0px 10px 20px 5px;
+color:#434343;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#article p{
+margin:15px 0px 15px 10px;
+padding-right:15px;
+color:#434343;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#article li{
+padding-top:0px;
+margin-top:0px;
+}
+
+#article ul{
+margin-top:0px;
+padding-top:0px;
+}
+
+a.heading {
+font-size: 14px;
+font-weight:bold;
+}
+a.heading:hover{
+font-size:14px;
+font-weight:bold;
+}
+#sidebar{
+position:relative;
+float:left;
+width:238px;
+}
+
+#footer{
+	padding:0px 10px 50px 0px;
+	color:#808080;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#footer_text{
+	position:relative;
+	float:left;
+	width:240px;
+	margin:10px 0px 0px 0px;
+}
+
+#footer_nav{
+	position:relative;
+	float:right;
+	width:200px;
+	margin:10px 0px 0px 0px;
+}
+
+#footer_nav ul{
+list-style:none;
+padding:0px;
+margin:0px;
+}
+
+#footer_nav ul li{
+float:left;
+position:relative;
+}
+
+
+
+
+
+/*---------------------------------------------------------*/
+/*styles for profile_index.html and profile_individual.html*/
+/*---------------------------------------------------------*/
+
+
+#profile_info{
+color:#024846;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+float:left;
+position:relative;
+width:500px;
+padding:10px 10px 10px 20px;
+}
+
+#profile_info p{
+margin:0px 0px 20px 0px;
+line-height:25px;
+}
+
+#profile_info a{
+color:#593b1d;
+}
+
+#profile_info a:hover{
+color:#322110;
+}
+
+#profile_login_wrapper{
+position:relative;
+float:left;
+width:280px;
+}
+
+#profile_name {
+padding:10px 0px 20px 15px;
+}
+
+#profile_name h1{
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bolder;
+color:#593b1d;
+margin:0px 0px 10px 0px;
+}
+
+#profile_name i{
+color:#024846;
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#profile_nav_02{
+background-color:#593b1d;
+height:26px;
+padding:8px 0px 0px 0px;
+margin:10px 0px 0px 0px;
+
+
+}
+
+#profile_nav_02 ul{
+margin:0px;
+
+padding:0px;
+list-style:none;
+}
+
+#profile_nav_02 ul li{
+float:left;
+position:relative;
+text-transform:uppercase;
+}
+
+#profile_nav_02 ul li a{
+text-decoration:none;
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bolder;
+color:#c5b19e;
+padding:10px 18px 12px 17px;
+}
+
+#profile_nav_02 ul li a:hover{
+text-decoration:none;
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bolder;
+color:#eee7e1;
+background-color:#322110;
+padding:10px 18px 12px 17px;
+}
+
+#profile_sidebar {
+position:relative;
+float:left;
+width:200px;
+height:480px;
+background-color:#a5c4c3;
+border-right:1px solid #b1b7b2;
+padding:15px 25px 15px 25px;
+color:#024846;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#profile_sidebar p{
+margin:10px 0px 15px 0px;
+padding:0px;
+line-height:20px;
+}
+
+#profile_sidebar h1{
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bolder;
+color:#ffffff;
+margin:0px 0px 10px 0px;
+padding:0px;
+}
+
+#profile_sidebar i{
+color:#333333;
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#profile_sidebar a{
+color:#593b1d;
+font-weight:bold;
+}
+
+#profile_sidebar a:hover{
+color:#322110;
+font-weight:bold;
+}
+
+#profile_sidebar ul{
+margin:10px 0px 15px 0px;
+padding:0px;
+list-style:none;
+}
+
+#profile_sidebar ul li {
+margin:5px 0px 5px 0px;
+}
+
+#profile_writing{
+position:relative;
+float:left;
+background-color:#ffffff;
+padding:20px 15px 15px 15px;
+}
+
+#profile_writing h1{
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bolder;
+color:#087876;
+margin:0px 0px 10px 0px;
+}
+
+#profile_writing i{
+color:#593b1d;
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+line-height:13pt;
+}
+
+#profile_writing a {
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+color:#328f8d;
+text-decoration:none;
+}
+
+#profile_writing a:hover {
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+color:#2a5c5b;
+text-decoration:none;
+}
+
+#profile_writing ul{
+list-style:none;
+margin:10px 10px 10px 15px;
+padding:0px;
+}
+
+#profile_writing ul li{
+margin:15px 0px 15px 0px;
+}
+
+#profile_writing img {
+margin:15px 0px 15px 15px;
+}
+
+#featured {
+	float:left;
+	height:238px;
+	margin:0px 0px 0px 10px;
+	width:268px;
+	background-image:url(http://www.remarriageworks.com/img/featured-content-bg.gif);
+	background-repeat:repeat-x;
+	background-position:top;
+	background-color:#6aaeac;
+	border:1px solid #163737;
+}
+
+#featured p {
+	color:#D9F9F9;
+	padding:0 15px;
+}
+
+#featured img {
+	margin:0 8px;
+	border-top:1px solid #355656;
+	border-left:1px solid #355656;
+	border-right:1px solid #355656;
+	border-bottom:1px solid #163737;
+}
+
+#featured-header {
+	background-image:url(http://www.remarriageworks.com/img/featured-header-bg.gif);
+	height:76px;
+	border-top:1px solid #355656;
+	border-left:1px solid #355656;
+	border-right:1px solid #355656;
+	border-bottom:1px solid #163737;
+}
+
+h1.featured-headline a{
+	color:#95D6D5;
+	font-size:22px;
+	line-height:18pt;
+	margin:15px 15px 0px 25px;
+	font-weight:normal;
+	display:block;
+}
+#wrapper #main_content #flash_content h3 em {
+	text-align: center;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+        <link href="id.css" rel="stylesheet" type="text/css" />
+        <link href="class.css" rel="stylesheet" type="text/css" />
+        <link rel="index" title="reMarriage Magazine :: Before, During &amp; Happily Ever After" href="http://remarriagemag.businesscatalyst.com/" />
+        <script src="/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+        <script language="javascript" src="http://www.remarriagemag.com/wp-content/themes/magazine/js/chrome.js"></script>
+        <script type="text/javascript" src="http://www.remarriagemag.com/wp-includes/js/jquery/jquery.js?ver=1.3.2"></script>
+        <script type="text/javascript" src="http://www.remarriagemag.com/wp-includes/js/jquery/jquery.form.js?ver=2.02m"></script>
+        <script type="text/javascript" src="http://www.remarriagemag.com/wp-content/plugins/mailchimp/js/mailchimp.js?ver=2.9.1"></script>
+        <style type="text/css">
+            .mc_error_msg { color: red; }
+            .mc_success_msg { color: green; }
+            .mc_merge_var{ padding:0; margin:0; }
+            .mc_custom_border{ padding:5px; border-width: 1px;border-style: solid;border-color: #999999;color: #000000;background-color: #FFFFFF;
+            }
+            .mc_custom_border legend {border-width: 1px;border-style: solid;border-color: #000000;color: #CC6600;background-color: #FFFFFF;font-size: 1.2em;padding:5px 10px;
+            }
+            #mc_signup_form .mc_var_label, #mc_signup_form .mc_input { float:left; clear:both; }
+            #mc_signup_form legend { padding:.5em;margin:0; }
+            #mc-indicates-required { float:left; clear:both; }
+            #mc_display_rewards { clear:both; }
+            #mc_interests_header { font-weight:bold; clear:both; padding-top:.2em;}
+            div.mc_interest{ clear:both;}
+            input.mc_interest { float:left; }
+            label.mc_interest_label {float:left; clear:right;}
+            .mc_signup_submit { width:100%; text-align:center; clear:both; padding:.2em; }
+            .ad_test {
+            text-align: right;
+            }
+        </style>
+        <!--[if IE]>
+<style type='text/css'>
+#mc_signup_form fieldset { position: relative; }
+#mc_signup_form legend {
+padding:.3em;
+position: absolute;
+top: -1em;
+left: .2em;
+}
+#mc_message { padding-top:1em; }
+</style>
+<![endif]-->
+    </head>
+    <body>
+        <div id="wrapper">
+        <div id="header">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td><img src="http://www.remarriagemag.com/wp-content/themes/magazine/images/reMarriage_logo.gif" alt="reMarriageWorks :: Before, During &amp; Happily Ever After" /><img alt="" src="/img/works.gif" width="123" height="80" /></td>
+                    <td>
+                    <div style="text-align: right;">{module_adrotator,7186}</div>
+                    <br />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="clear"></div>
+        <div class="chromestyle" id="chromemenu">
+        <ul>
+            <li><a href="http://remarriageworks.com">Home</a></li>
+            <li><a href="http://remarriageworks.com/_blog/Articles">Articles</a></li>
+            <li><a href="http://remarriageworks.com/Advice/index">Advice</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#" rel="dropmenu2">Advertise</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#" rel="dropmenu3">About</a></li>
+            <li><a href="http://remarriageworks.com/contact">Contact</a></li>
+        </ul>
+        <div id="spacer">&nbsp;</div>
+        </div>
+        <!--#nav_01-->
+        <div id="dropmenu2" class="dropmenudiv" style="width: 150px;">
+        <a href="http://remarriageworks.com/media_kit.html">Media Kit</a>
+        <a href="http://remarriageworks.com/ad_specs.html">Online Ad Specs</a>
+        </div>
+        <div id="dropmenu3" class="dropmenudiv" style="width: 150px;">
+        <a href="#">Press</a>
+        <a href="#">Letter from the Publisher</a>
+        </div>
+        <script type="text/javascript">
+
+cssdropdown.startchrome("chromemenu")
+
+</script>
+        <div id="nav_02">
+        <div id="nav_02_text">{module_breadcrumbs}
+        </div>
+        <!--# <form method="get" id="searchform" action="#">
+            <div id="search_box">
+            <label>
+            <input type="text" name="s" id="s" />
+            </label>
+          </div>
+            <input type="image" style="padding-top: 6px;" src="http://www.remarriagemag.com/wp-content/themes/magazine/images/search_bttn.gif" />
+        </form>2-->
+        </div>
+        <!--#nav_02-->
+        </div>
+        <!--#header-->
+        <div id="main_content">
+        <div id="flash_content">
+        <p>{tag_pagecontent}</p>
+        </div>
+        <!--#flash_content-->
+        <div id="featured">
+        <!--New content -->
+        <div id="featured-header">
+        <h1 class="featured-headline">
+        <a href="video" title="Learn about reMarriage and h">Showcase Your Products  With Us! </a></h1>
+        </div>
+        <!--#featured-header-->
+        <p><a href="video"><img alt="" src="/img/video_teaser.jpg" width="220" height="130" style="border-width: 0px;border-style: solid;" /></a>        <!--#featured-->        </p>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--#main_content-->
+        <div id="secondary_content_wrapper">
+        <div class="divider_brown"></div>
+        <!--.divider_brown--><!--.content_row-->
+        <div class="content_row">
+        <div class="small_content_block_01">
+        <h1>Tell us  about the details of your second wedding</h1>
+        <p><strong>1. How much did you spend on your second wedding?</strong></p>
+        <form id="form1" name="form1" method="post" action="survey.html">
+            <p>
+            <input type="radio" name="radio" id="radio" value="radio" />
+            $0 - 1,000<br />
+            <input type="radio" name="radio" id="radio2" value="radio" />
+            $1,001 -
+            5,000<br />
+            <input type="radio" name="radio" id="radio3" value="radio" />
+            $5,001 -
+            10,000<br />
+            <input type="radio" name="radio" id="radio4" value="radio" />
+            $10,001 -
+            20,000
+            <br />
+            <input type="radio" name="radio" id="radio5" value="radio" />
+            $20,001 or more
+            </p>
+            <p>
+            <input type="submit" name="button" id="button" value="Take Survey Now!" />
+            </p>
+        </form>
+        <p>&nbsp;</p>
+        </div>
+        <div class="small_content_block_B">
+        <h1>Here's What You're Saying:</h1>
+        <p>I was unable to populate this with recent post via the BusCat system. Sorry :-( Still working on a solution.</p>
+        </div>
+        <div class="contest">
+        <h1><a href="http://remarriagemag.businesscatalyst.com/contest.htm" rel="bookmark" title="Permanent Link to Contest">reMarriage Book Giveaway</a></h1>
+        <p class="MsoNormal"><img alt="" src="/img/contest.jpg" width="100" height="147" style="float: right; margin-left: 5px; margin-right: 5px;        border-width: 1px;border-style: solid;" />Getting routine physicals and dental checkups is essential to your health. And your car needs a regular oil change. </p>
+        <p class="MsoNormal"><strong>But, what about your relationship? </strong></p>
+        <br />
+        <a href="http://remarriagemag.businesscatalyst.com/contest.htm"><img alt="" src="http://www.remarriagemag.com/wp-content/themes/magazine/images/enter_bttn.jpg" id="Image7" onmouseover="MM_swapImage('Image7','','http://www.remarriagemag.com/wp-content/themes/magazine/images/enter_bttn_OVER.gif',1)" onmouseout="MM_swapImgRestore()" style="border-width: 0px;border-style: solid;" /></a>
+        </div>
+        <div class="small_content_block_03">
+        <div style="text-align: center;"><img alt="" src="/img/twitter-logo-facebook-logo.jpg" width="230" height="62" usemap="#Map" style="border-width: 0px;border-style: solid;" />&nbsp;</div>
+        <div style="text-align: center;"><span class="profile_login">Advertisement</span><br />
+        {module_adrotator,7420}</div>
+        <div style="text-align: center;"><a href="/newsletter_signup.html"><img alt="" src="/img/newsletter_signup.png" width="221" height="71" style="border-width: 0px;border-style: solid;" /></a></div>
+        <div id="beacon_d3b484aec1" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img alt="" src="http://www.remarriagemagazine.com/admanager/www/delivery/lg.php?bannerid=7&amp;campaignid=7&amp;zoneid=4&amp;channel_ids=,&amp;loc=http://www.remarriagemag.com/&amp;cb=d3b484aec1" width="0" height="0" style="width: 0px; height: 0px;" /></div>
+        </div>
+        <div class="clear"></div>
+        <div class="divider_brown"></div>
+        <!--.divider_brown-->
+        </div>
+        <!--.content_row-->
+        </div>
+        <!--secondary_content_wrapper-->
+        <div id="footer">
+        <div id="footer_text">&copy; 2010 Remarriage, LLC | All Rights Reserved</div>
+        <!--#footer_text-->
+        <div id="footer_nav">
+        <ul>
+            <li><a href="http://remarriageworks.com/contact">Contact Us</a></li>
+            <li><a href="http://www.remarriageworks.com/privacy">Privacy </a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
