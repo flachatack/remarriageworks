@@ -14,12 +14,10 @@ class ContentsController < ApplicationController
    @page_head = "All Content"
    parameter = params[:content_type]
    @contents = []
-	if (parameter)
- 		preFind = Content.find_by_content_type(parameter)
- 		if preFind != nil
- 			@contents = preFind
- 		end
-   end 		 	
+	preFind = Content.find_by_content_type(parameter)
+ 	if preFind != nil
+ 		@contents = preFind
+ 	end		 	
   end
 
   def edit
