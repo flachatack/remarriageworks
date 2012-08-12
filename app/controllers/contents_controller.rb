@@ -12,7 +12,12 @@ class ContentsController < ApplicationController
 
   def index
    @page_head = "All Content"
- 	@contents = Content.all
+   parameter = params[:content_type]
+   @contents = []
+	preFind = Content.find_by_content_type(parameter)
+ 	if preFind != nil
+ 		@contents = preFind
+ 	end		 	
   end
 
   def edit
