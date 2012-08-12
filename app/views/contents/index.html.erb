@@ -1,4 +1,4 @@
-<% if !@contents.nil? || !@contents.empty? %>
+<% if @contents != [] %>
 <% @contents.each do |c| %>
 <div class="post">
 	<h3 class="title"><%= link_to c.title, :controller => "contents", :action => "show", :id => c.id %></h3>

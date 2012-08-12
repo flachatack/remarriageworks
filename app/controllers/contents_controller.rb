@@ -11,10 +11,10 @@ class ContentsController < ApplicationController
   end
 
   def index
-   @page_head = "All Content"
+   @page_head = "All Content: " + params[:content_type].to_s
    parameter = params[:content_type]
    @contents = []
-	preFind = Content.find_by_content_type(parameter)
+	preFind = Content.find_all_by_content_type(parameter)
  	if !(preFind == nil)
  		@contents = preFind
  	end		 	
@@ -26,7 +26,6 @@ class ContentsController < ApplicationController
   def create
 	@content = Content.new(params[:content])
 	@content.body = params[:body]
-	
 	if @content.save
 		redirect_to :action => "index"
 	else
