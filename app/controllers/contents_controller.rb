@@ -15,7 +15,7 @@ class ContentsController < ApplicationController
    parameter = params[:content_type]
    @contents = []
 	preFind = Content.find_by_content_type(parameter)
- 	if preFind != nil
+ 	if !(preFind == nil)
  		@contents = preFind
  	end		 	
   end
