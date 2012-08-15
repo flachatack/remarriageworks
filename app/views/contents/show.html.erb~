@@ -1,6 +1,8 @@
+<% if @content.avatar %> 
 <div style="text-align:center;"><%= image_tag @content.avatar.url(:medium) %></div>
+<% end %>
 <h2 style="text-align:center;"><%= @content.title %></h2>
 <h4 style="text-align:center;"><%= @content.subtitle %></h4>
 <p><%= render :inline => @content.body %></p></br></br>
 <table align=center><tr><td><%= button_to "Edit this content", { :action => "edit", :id => @content.id }, {:method => :get} %></td>
-<td><%= button_to "Delete this content", @content, :confirm => "Remove this Content from the database?", :method => :delete, :class=> :destroy %></td></tr></table>
+<td><%= button_to "Delete this content", @content, :confirm => "Remove this Content from the database?", :method => :delete %></td></tr></table>
