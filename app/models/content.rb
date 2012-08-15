@@ -2,12 +2,15 @@ class Content < ActiveRecord::Base
 
 
 
-  attr_accessible :body, :subtitle, :title, :content_type
+  attr_accessible :body, :subtitle, :title, :content_type, :avatar, :tags
   attr_taggable :tags
+  has_attached_file :avatar, :styles => { :large => "680x240", :medium => "320x120>", :thumb => "160x60>" }		
+
 
   validates :title, presence: true, length: { maximum: 140 }
   validates :subtitle, length: { maximum: 140 }
   validates :content_type, presence: true
+  validates :tags, presence: true
 
 
 end

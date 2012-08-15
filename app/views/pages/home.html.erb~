@@ -1,4 +1,3 @@
-<h1>This is the home page :D</h1>
-<p></p>
-<p>Click <%= link_to "here", :controller => "contents", :action => "show" %> to see sample content</p>
+<h1>Welcome to reArticles</h1>
+
 <p>Click <%= link_to "here", :controller => "contents", :action => "new" %> to publish new content</p>

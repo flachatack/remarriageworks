@@ -1,3 +1,6 @@
+
+
+
 #wrapper{
 	width:960px;
 	margin:0 auto;
@@ -36,6 +39,8 @@ color: white;
 padding: 10px 15px 10px 14px;
 text-decoration: none;
 background-color:#087876;
+
+
 }
 
 .topnav li a:hover, .topnav li .current{
@@ -56,6 +61,7 @@ width: 806px;
 background-color:#593b1d;
 padding:0px;
 margin:0;
+
 text-transform:uppercase;
 }
 
@@ -81,6 +87,7 @@ background-color:#322110;
 
 .topnav_second li a:hover, .topnav li .current{
 color:#eee7e1;
+
 background-color:#322110;
 }
 
@@ -473,3 +480,22 @@ h1.featured-headline a{
 #wrapper #main_content #flash_content h3 em {
 	text-align: center;
 }
+
+.mc_error_msg { color: red; }
+.mc_success_msg { color: green; }
+.mc_merge_var{ padding:0; margin:0; }
+.mc_custom_border{ padding:5px; border-width: 1px;border-style: solid;border-color: #999999;color: #000000;background-color: #FFFFFF; }
+.mc_custom_border legend {border-width: 1px;border-style: solid;border-color: #000000;color: #CC6600;background-color: #FFFFFF;font-size: 1.2em;padding:5px 10px;}
+#mc_signup_form .mc_var_label, #mc_signup_form .mc_input { float:left; clear:both; }
+#mc_signup_form legend { padding:.5em;margin:0; }
+#mc-indicates-required { float:left; clear:both; }
+#mc_display_rewards { clear:both; }
+#mc_interests_header { font-weight:bold; clear:both; padding-top:.2em;}
+div.mc_interest{ clear:both;}
+input.mc_interest { float:left; }
+label.mc_interest_label {float:left; clear:right;}
+.mc_signup_submit { width:100%; text-align:center; clear:both; padding:.2em; }
+.ad_test {text-align: right;}
+#mc_signup_form fieldset { position: relative; }
+#mc_signup_form legend {padding:.3em;position: absolute;top: -1em;left: .2em;}
+#mc_message { padding-top:1em; }

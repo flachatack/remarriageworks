@@ -1,8 +1,20 @@
-<div class="post">
-		<h2 class="title"><a href="#">Article1 Title </a></h2>
-		<p class="meta"><span class="date">PostDate</span><span class="posted">Posted by <a href="#">Author</a></span></p>
-		<div style="clear: both;">&nbsp;</div>
-		<div class="entry">	
-				<p class="links"><a href="#" class="more">Read More</a><a href="#" title="b0x" class="comments">Comments</a></p>
-  		</div>
-</div>
+<h3>Content Updater</h3>
+<%= form_for(@content) do |f| %>
+	<%= f.label "Title" %></br>
+	<%= f.text_field :title, :size => 94 %></br></br>
+	<%= f.label "Subtitle" %></br>
+	<%= f.text_field :subtitle, :size => 94 %></br></br>
+	<%= f.label "Type (Select One):" %></br>	
+	<%= f.select :content_type, options_for_select([["Article", "article"], ["Blog", "blog"], ["Video", "video"], ["External", "external"]], @content.content_type) %></br></br>
+	Select Image for Content display (Optional but recommended, 680x240 pixels): </br>
+	<%= f.file_field :avatar %>	</br> </br>
+	<%= "Publish Date: " + Date.today.strftime("%d %b. %Y") %></br>
+	<%= "Author: " + "TODO" %></br>
+	<%= "Tags: " + "TODO" %> </br></br>
+	<%= tinymce_assets %>
+	<%= text_area_tag :body, @content.body.to_s, :class => "tinymce", :rows => 25, :cols => 73 %>
+	<%= tinymce %> </br></br>
+	<%= f.label "Tags (seperate by commas):" %></br>
+	<%= f.text_field :tags, :value => @content.tags.map{ |i| i.to_s }.join(","), :size => 94 %></br></br>
+<%= f.submit "Update", class: "more" %>
+<% end %>
