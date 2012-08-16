@@ -13,7 +13,8 @@ end
 module RemarriageWorks
   class Application < Rails::Application
   
-  
+   config.filter_parameters += [:password, :password_confirmation]
+
 	config.assets.precompile += %w( *.js *.css )
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

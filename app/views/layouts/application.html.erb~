@@ -23,7 +23,7 @@
          	<tbody>
             	<tr>
                	<td><%= image_tag('reMarriage_logo.gif', :size => "344x80") %></td>
-                  <td><div style="text-align: right;">reArticles</div><br /></td>
+                  <td><div style="text-align: right;">rearticles</div><br /></td>
                </tr>
             </tbody>
         </table>
@@ -31,10 +31,10 @@
         <div class="chromestyle" id="chromemenu">
         <ul>
             <li><%= link_to "Home", :root %></li>
-            <li><%= link_to "Articles", :controller => "contents", :action => "index", :content_type => "article" %></li>
-            <li><%= link_to "Blogs", :controller => "contents", :action => "index", :content_type => "blog" %></li>
-            <li><%= link_to "Videos", :controller => "contents", :action => "index", :content_type => "video" %></li>
-            <li><%= link_to "External Sources", :controller => "contents", :action => "index", :content_type => "external" %></li>
+            <li><%= link_to "Articles", contents_path(:content_type => "article") %></li>
+            <li><%= link_to "Blogs", contents_path(:content_type => "blog") %></li>
+            <li><%= link_to "Videos", contents_path(:content_type => "video") %></li>
+            <li><%= link_to "External Sources", contents_path(:content_type => "external") %></li>
         </ul>
         <div id="spacer">&nbsp;</div>
 		</div>  
@@ -44,6 +44,11 @@
         			<%= @breadcrumbs %>
         		</div>
         </div>
+        
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+			
         <!--#nav_02-->
       </div>
       <!--#header-->
@@ -52,18 +57,24 @@
         		<p><%= yield %></p>
         	</div>
         	<!--#flash_content-->
+        	
+        	
         	<div id="featured">
         	<!--New content -->
         		<div id="featured-header">
         			<h1 class="featured-headline">
-        				<a href="#" title="">Right Header</a>
+
         			</h1>
         		</div>
         		<!--#featured-header-->
-        		<p>RIGHT BODY</p>
+        		<p>					     		
+        		</p>
         	</div>
         	<div class="clear"></div>
 		</div>
+		
+		
+		
       <!--#main_content-->
       <div id="secondary_content_wrapper">
       	<div class="divider_brown">

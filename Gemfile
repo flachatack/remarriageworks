@@ -4,6 +4,8 @@ gem 'rails', '3.2.7'
 gem 'rocket_tag'
 gem 'tinymce-rails'
 gem 'paperclip'
+gem 'devise'
+gem 'rails3-generators'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

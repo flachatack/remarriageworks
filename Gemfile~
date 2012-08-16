@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.7'
 gem 'rocket_tag'
 gem 'tinymce-rails'
-gem 'paperclip', '~> 3.0'
+gem 'paperclip'
+gem "authlogic", :git => "git://github.com/binarylogic/authlogic.git"
+gem 'rails3-generators'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
