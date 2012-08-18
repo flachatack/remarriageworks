@@ -7,14 +7,35 @@
   	  	<%= stylesheet_link_tag "class" %>
 		<%= javascript_include_tag 'application' %>
 		<%= csrf_meta_tags %>
-  	<!--[if IE]>
-	<style type='text/css'>
-		#mc_signup_form fieldset { position: relative; }
-		#mc_signup_form legend {padding:.3em;position: absolute;top: -1em;left: .2em;}
-		#mc_message { padding-top:1em; }
-	</style>
-	<![endif]-->
+		
+		
+		
+		<script type="text/javascript">
+		function test() {		
+			$.get('/login');			
+			}
+		
+		function test2(){
+
+		var jqxhr = $.get("/login", function(data) {
+    $('#flash_content').html(data);}).success(function() { alert("second success"); }).error(function(xhr, status, ex) { if (xhr) {
+      msg = "readyState is " + xhr.readyState + ". ";
+    }
+    if (ex) {
+      msg += ex.name + ' - ' + ex.message;
+    }
+    alert("ERROR " + msg); }).complete(function() { alert("complete"); });}
+		
+		$(document).ready(function() {
+		$("#login").click(function(event){
+		 event.preventDefault(); // Prevent link from following its href
+  		test();
+		});});
+		</script>	
+		
+		
 </head>
+
 
 <body>
 	<div id="wrapper">
@@ -23,14 +44,8 @@
          	<tbody>
             	<tr>
                	<td><%= image_tag('reMarriage_logo.gif', :size => "344x80") %></td>
-                  <td><div style="text-align: right;">
-                  <% if current_user %>
-		     			<%= link_to "Edit Profile", edit_user_path(current_user.id) %>
-		       		  <%= link_to "Logout", :logout %>
-		    		   <% else %>
-		    		   <%= link_to "Register", new_user_path %> |
-		     			  <%= link_to "Login", :login %>
-		    			<% end %>      
+                  <td><div id="toplogin" style="text-align: right;">
+                  <%= render :partial => "layouts/login" %>      
 		    			<div>
    			  	   	<p id="notice"><%= notice %></p>
     						<p id="alert"><%= alert %></p>
@@ -41,13 +56,7 @@
         </table>
         <div class="clear"></div>
         <div class="chromestyle" id="chromemenu">
-        <ul>
-            <li><%= link_to "Home", :root %></li>
-            <li><%= link_to "Articles", contents_path(:content_type => "article") %></li>
-            <li><%= link_to "Blogs", contents_path(:content_type => "blog") %></li>
-            <li><%= link_to "Videos", contents_path(:content_type => "video") %></li>
-            <li><%= link_to "External Sources", contents_path(:content_type => "external") %></li>
-        </ul>
+        	<%= render :partial => "layouts/topmenu" %>
         <div id="spacer">&nbsp;</div>
 		</div>  
       <!--#nav_01-->
@@ -60,18 +69,21 @@
         <!--#nav_02-->
       </div>
       <!--#header-->
+      
+      
+      
+      
+      
       <div id="main_content">
       	<div id="flash_content">
-        		<p><%= yield %></p>
+
+        		 <p><%= yield %></p>
+
         	</div>
-        	<!--#flash_content-->
-        	
-        	
         	<div id="featured">
         	<!--New content -->
         		<div id="featured-header">
         			<h1 class="featured-headline">
-
         			</h1>
         		</div>
         		<!--#featured-header-->
@@ -81,8 +93,10 @@
         	<div class="clear"></div>
 		</div>
 		
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+		
+		
+		
+
 		
       <!--#main_content-->
       <div id="secondary_content_wrapper">

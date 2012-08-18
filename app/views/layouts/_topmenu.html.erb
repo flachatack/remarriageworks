@@ -1,0 +1,7 @@
+<ul>
+   <li><%= link_to "Home", :root %></li>
+   <li><%= link_to "Articles", contents_path(:content_type => "article") %></li>
+   <li><%= link_to "Blogs", contents_path(:content_type => "blog") %></li>
+   <li><%= link_to "Videos", contents_path(:content_type => "video") %></li>
+   <li><%= link_to "External Sources", contents_path(:content_type => "external") %></li>
+</ul>

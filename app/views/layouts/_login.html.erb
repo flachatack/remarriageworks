@@ -1,0 +1,10 @@
+
+
+<% if current_user %>
+
+<%= link_to "Edit Profile", edit_user_path(current_user.id), :id => "editprofile" %>
+<%= link_to "Logout", :logout, :id => "logout" %>
+<% else %>
+<%= link_to "Register", new_user_path, :id => "register" %> |
+<%= link_to "Login", :login, :id => "login", :remote => true %>
+<% end %>

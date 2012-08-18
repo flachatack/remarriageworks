@@ -1,6 +1,11 @@
 class UserSessionsController < ApplicationController
   def new
   	@user = User.new
+  	respond_to do |format|
+        format.js  { }
+        format.html { }
+        format.xml  { head :ok }
+      end
   end
 
   def create
