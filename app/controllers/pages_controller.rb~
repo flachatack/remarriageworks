@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
+  before_filter :require_admin, :only => [:admin_console]
+  
   def home
-
+  end
+  
+  def admin_console
+  
   end
 end

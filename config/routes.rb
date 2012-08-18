@@ -1,8 +1,19 @@
 RemarriageWorks::Application.routes.draw do
   
 
+  match 'login' => 'user_sessions#new', :as => :login
+  match 'logout' => 'user_sessions#destroy', :as => :logout
+  match "profile" => "users#show"
+  match "admin" => "admin_users#admin_console"
+  
 
+  get "user_sessions/new"
 
+  get "user_sessions/create"
+
+  get "user_sessions/destroy"
+
+  
 
   get "contents/new"
 
@@ -13,9 +24,20 @@ RemarriageWorks::Application.routes.draw do
   get "contents/edit"
 
   get "pages/home"
+  
+  scope "/admin" do
+  	resources :users
+  end
 
 
   resources :contents
+  resources :user_sessions
+  
+  resources :users, :except => [:index, :show, :destroy] do
+    member do
+      get :activate
+    end
+  end
 
 
   root :to => 'pages#home'

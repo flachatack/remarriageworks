@@ -1,0 +1,11 @@
+class AddRolesToUsers < ActiveRecord::Migration
+  def self.up
+  	add_column :users, :manager, :boolean, :default => false
+  	add_column :users, :admin, :boolean, :default => false
+  end
+  
+  def self.down
+    remove_column :users, :manager
+    remove_column :users, :admin
+  end
+end
