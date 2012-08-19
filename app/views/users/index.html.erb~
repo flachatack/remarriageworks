@@ -15,12 +15,12 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td width="10%"><%= user.username %></td>
-    <td><%= user.email %></td>
-    <td style="text-align: center"><%= user.admin %></td>
-    <td style="text-align: center"><%= user.manager %></td>
+    <td style="text-align: center", width="10%"><%= user.username %></td>
+    <td style="text-align: center", width="20%"><%= user.email %></td>
+    <td style="text-align: center", width="10%"><%= user.admin %></td>
+    <td style="text-align: center", width="10%"><%= user.manager %></td>
     <td style="text-align: center"><%= user.activation_state %></td>
-    <td> #show number of comments user has</td>
+    <td> <!--show number of comments user has--> </td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
