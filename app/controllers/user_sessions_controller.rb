@@ -1,5 +1,6 @@
 class UserSessionsController < ApplicationController
   def new
+  @test = "controller test"
   	@user = User.new
   	respond_to do |format|
         format.js  { }

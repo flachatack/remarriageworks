@@ -11,21 +11,8 @@
 		
 		
 		<script type="text/javascript">
-		function test() {
-		
-			$.get('/login');			
-			}
-		
-		function test2(){
-
-		var jqxhr = $.get("/login", function(data) {
-    $('#flash_content').html(data);}).success(function() { alert("second success"); }).error(function(xhr, status, ex) { if (xhr) {
-      msg = "readyState is " + xhr.readyState + ". ";
-    }
-    if (ex) {
-      msg += ex.name + ' - ' + ex.message;
-    }
-    alert("ERROR " + msg); }).complete(function() { alert("complete"); });}
+		function test() {		
+			$.get('/login');}
 		
 		$(document).ready(function() {
 		$("#login").click(function(event){
