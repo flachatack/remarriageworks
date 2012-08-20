@@ -3,8 +3,9 @@ class UserSessionsController < ApplicationController
   @test = "controller test"
   	@user = User.new
   	respond_to do |format|
-        format.js  { }
-        format.html { }
+        format.js 
+        format.html { redirect_to @user }
+        format.json { render :json => @user }
         format.xml  { head :ok }
       end
   end

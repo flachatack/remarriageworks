@@ -11,14 +11,15 @@
 		
 		
 		<script type="text/javascript">
-		function test() {		
+		function userlogin() {		
 			$.get('/login');}
 		
-		$(document).ready(function() {
-		$("#login").click(function(event){
-		 event.preventDefault(); // Prevent link from following its href
-  		test();
-		});});
+			$(document).ready(function() {
+				$("#login").click(function(event){
+		 			event.preventDefault(); // Prevent link from following its href
+  					userlogin();
+				});
+			});
 		</script>	
 		
 		
