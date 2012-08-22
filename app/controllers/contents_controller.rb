@@ -1,12 +1,17 @@
 class ContentsController < ApplicationController
+before_filter :require_admin, :except => [:new, :update, :create, :destroy, :edit]
   
+  def manager_console
+	@contents = Content.all
+  end
+
   def new
    @breadcrumbs += " > New Content"
- 	@content = Content.new
+ 	@contents = Content.new
   end
 
   def show
-	@content = Content.find(params[:id])  
+	@contents = Content.find(params[:id])  
    @breadcrumbs += " > Content > " + @content.title.to_s
   end
 
@@ -21,12 +26,12 @@ class ContentsController < ApplicationController
   end
 
   def edit
-  	@content = Content.find(params[:id])  	
+  	@contents = Content.find(params[:id])  	
   end
   
   def update
-    @content = Content.find(params[:id])
-    @content.body = params[:body]
+    @contents = Content.find(params[:id])
+    @contents.body = params[:body]
     if (@content.update_attributes(params[:content]))
 		redirect_to :action => "show", :id => @content.id
     else
@@ -35,9 +40,9 @@ class ContentsController < ApplicationController
   end
   
   def create
-	@content = Content.new(params[:content])
-	@content.body = params[:body]	
-	if @content.save
+	@contents = Content.new(params[:content])
+	@contents.body = params[:body]	
+	if @contents.save
 		redirect_to :action => "show", :id => @content.id
 	else
 		render 'new'  
