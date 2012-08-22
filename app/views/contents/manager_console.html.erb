@@ -1,32 +1,27 @@
 <h1>Manager console</h1>
 We'll put a table here for all the contents (articles) in the database
-<h1> Listing Contents </h1>
+<h2> Listing Contents </h2>
 
 <% if @contents != [] %>
-<table>
+<table border="3">
  <tr>
     <th></th>
     <th>Title</th>
     <th>Author</th>
     <th>Created on</th>
-    <th></th>
     <th>Comments</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 <% @contents.each do |c| %>
 <tr>
 	<td><%= image_tag c.avatar.url(:thumb) %></td>
-	<td>	
-		<h4>&nbsp&nbsp<%= c.title %></h4>
-		<p>&nbsp&nbsp<span>Posted on: <%= c.created_at.strftime("%d %b. %Y") %></span><span> by AUTHOR (to change eventually)</span></p>
-		<div class="entry">	
-			<td class="links">&nbsp&nbsp<%= link_to "Read More", :controller => "contents", :action => "show", :id => c.id %>
-			&nbsp<a href="#" title="b0x" class="comments">Comments</a>
-			</td>
-  		</div>
-  	</td>
+	<td><%= link_to c.title, :controller => "contents", :action => "show", :id => c.id %></td>
+	<td>Posted on: <%= c.created_at.strftime("%d %b. %Y") %> </td>
+	<td>by AUTHOR</td>
+	
+	<td><a href="#" title="box" class="comments">Comments</a></td>
+	<td><%= link_to "Edit" %></td>
+	<td><%= link_to "Delete" %></td>
+    	
 </tr>
 <% end %>
 </table>

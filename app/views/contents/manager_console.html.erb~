@@ -1,3 +1,35 @@
 <h1>Manager console</h1>
 We'll put a table here for all the contents (articles) in the database
+<h2> Listing Contents </h2>
+
+<% if @contents != [] %>
+<table border="3">
+ <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Created on</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @contents.each do |c| %>
+<tr>
+	<td><%= image_tag c.avatar.url(:thumb) %></td>
+	<td><%= link_to c.title, :controller => "contents", :action => "show", :id => c.id %></td>
+	<td>Posted on: <%= c.created_at.strftime("%d %b. %Y") %> </td>
+	<td>by AUTHOR</td>
+	
+	<td><%= link_to "Comments"</td>
+	<td><%= link_to "Edit" %></td>
+	<td><%= link_to "Delete" %></td>
+    	
+</tr>
+<% end %>
+</table>
+
+
+<% else %>
+	<h3 class="title">No content of this type exists :( but you should add some :)</h3>
+<% end %>
 
