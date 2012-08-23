@@ -42,7 +42,7 @@ before_filter :require_admin, :except => [:new, :update, :create, :destroy, :edi
   def create
 	@content = Content.new(params[:content])
 	@content.body = params[:body]	
-	if @contents.save
+	if @content.save
 		redirect_to :action => "show", :id => @content.id
 	else
 		render 'new'  

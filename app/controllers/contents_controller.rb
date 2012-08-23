@@ -1,5 +1,5 @@
 class ContentsController < ApplicationController
-before_filter :require_admin, :except => [:new, :update, :create, :destroy, :edit]
+before_filter :require_admin, :only => [:new, :update, :create, :destroy, :edit]
   
   def manager_console
 	@contents = Content.all
