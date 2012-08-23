@@ -5,7 +5,7 @@
 	<%= f.label "Subtitle" %></br>
 	<%= f.text_field :subtitle, :size => 94 %></br></br>
 	<%= f.label "Type (Select One):" %></br>	
-	<%= f.select :content_type, options_for_select([["Article", "article"], ["Blog", "blog"], ["Video", "video"], ["External", "external"]], @content.content_type) %></br></br>
+	<%= f.select :content_type, options_for_select([["Article", "article"], ["Blog", "blog"], ["Video", "video"], ["External", "external"], ["Tip", "tip"]],  @content.content_type) %></br></br>
 	Select Image for Content display (Optional but recommended, 680x240 pixels): </br>
 	<%= f.file_field :avatar %>	</br> </br>
 	<%= "Publish Date: " + Date.today.strftime("%d %b. %Y") %></br>
