@@ -7,11 +7,11 @@ before_filter :require_admin, :except => [:new, :update, :create, :destroy, :edi
 
   def new
    @breadcrumbs += " > New Content"
- 	@contents = Content.new
+ 	@content = Content.new
   end
 
   def show
-	@contents = Content.find(params[:id])  
+	@content = Content.find(params[:id])  
    @breadcrumbs += " > Content > " + @content.title.to_s
   end
 
@@ -26,12 +26,12 @@ before_filter :require_admin, :except => [:new, :update, :create, :destroy, :edi
   end
 
   def edit
-  	@contents = Content.find(params[:id])  	
+  	@content = Content.find(params[:id])  	
   end
   
   def update
-    @contents = Content.find(params[:id])
-    @contents.body = params[:body]
+    @content = Content.find(params[:id])
+    @content.body = params[:body]
     if (@content.update_attributes(params[:content]))
 		redirect_to :action => "show", :id => @content.id
     else
@@ -40,9 +40,9 @@ before_filter :require_admin, :except => [:new, :update, :create, :destroy, :edi
   end
   
   def create
-	@contents = Content.new(params[:content])
-	@contents.body = params[:body]	
-	if @contents.save
+	@content = Content.new(params[:content])
+	@content.body = params[:body]	
+	if @content.save
 		redirect_to :action => "show", :id => @content.id
 	else
 		render 'new'  

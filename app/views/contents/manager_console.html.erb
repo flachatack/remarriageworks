@@ -1,5 +1,5 @@
 <h1>Manager console</h1>
-We'll put a table here for all the contents (articles) in the database
+<p>Links for Title, comments, edit, and delete do not necessarily work</p>
 <h2> Listing Contents </h2>
 
 <% if @contents != [] %>
@@ -19,9 +19,8 @@ We'll put a table here for all the contents (articles) in the database
 	<td>by AUTHOR</td>
 	
 	<td><a href="#" title="box" class="comments">Comments</a></td>
-	<td><%= link_to "Edit" %></td>
-	<td><%= link_to "Delete" %></td>
-    	
+	<td><%= link_to "Edit", edit_content_path(c.id) %></td>
+	<td><%= link_to "Delete",  c, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </tr>
 <% end %>
 </table>
@@ -30,4 +29,5 @@ We'll put a table here for all the contents (articles) in the database
 <% else %>
 	<h3 class="title">No content of this type exists :( but you should add some :)</h3>
 <% end %>
-
+<p> </p>
+<%= link_to "New Content", new_content_path() %>
