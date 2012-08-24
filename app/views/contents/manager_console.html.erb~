@@ -1,0 +1,33 @@
+<h1>Manager console</h1>
+<p>Links for Title, comments, edit, and delete do not necessarily work</p>
+<h2> Listing Contents </h2>
+
+<% if @contents != [] %>
+<table border="3">
+ <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Created on</th>
+    <th>Comments</th>
+  </tr>
+<% @contents.each do |c| %>
+<tr>
+	<td><%= image_tag c.avatar.url(:thumb) %></td>
+	<td><%= link_to c.title, :controller => "contents", :action => "show", :id => c.id %></td>
+	<td>Posted on: <%= c.created_at.strftime("%d %b. %Y") %> </td>
+	<td>by AUTHOR</td>
+	
+	<td><a href="#" title="box" class="comments">Comments</a></td>
+	<td><%= link_to "Edit", edit_content_path(c.id) %></td>
+	<td><%= link_to "Delete",  c, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
+<% end %>
+</table>
+
+
+<% else %>
+	<h3 class="title">No content of this type exists :( but you should add some :)</h3>
+<% end %>
+<p> </p>
+<%= link_to "New Content", new_content_path() %>

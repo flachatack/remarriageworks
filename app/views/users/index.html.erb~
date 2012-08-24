@@ -1,8 +1,6 @@
-<h1>Admin console</h1>
-<%= link_to "Manager Console", manager_path %>
-<h2>Listing users</h2>
+<h1>Listing users</h1>
 
-<table border="3">
+<table>
   <tr>
     <th>Username</th>
     <th>Email</th>

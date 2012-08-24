@@ -1,5 +1,10 @@
 class ContentsController < ApplicationController
+before_filter :require_admin, :only => [:new, :update, :create, :destroy, :edit]
   
+  def manager_console
+	@contents = Content.all
+  end
+
   def new
    @breadcrumbs += " > New Content"
  	@content = Content.new

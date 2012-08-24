@@ -1,13 +1,13 @@
 <h1>Listing users</h1>
 
-<table>
+<table border="3">
   <tr>
     <th>Username</th>
     <th>Email</th>
-    <th>Crypted password</th>
-    <th>Salt</th>
     <th>Admin</th>
     <th>Manager</th>
+    <th>Active mode</th>
+    <th>Comments</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,12 +15,12 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.username %></td>
-    <td><%= user.email %></td>
-    <td><%= user.crypted_password %></td>
-    <td><%= user.salt %></td>
-    <td><%= user.admin %></td>
-    <td><%= user.manager %></td>
+    <td style="text-align: center", width="10%"><%= user.username %></td>
+    <td style="text-align: center", width="20%"><%= user.email %></td>
+    <td style="text-align: center", width="10%"><%= user.admin %></td>
+    <td style="text-align: center", width="10%"><%= user.manager %></td>
+    <td style="text-align: center"><%= user.activation_state %></td>
+    <td> <!--show number of comments user has--> </td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
