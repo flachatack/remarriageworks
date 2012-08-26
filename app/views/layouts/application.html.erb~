@@ -11,27 +11,15 @@
 		
 		
 		<script type="text/javascript">
-		function test() {
+		function userlogin() {		
+			$.get('/login');}
 		
-			$.get('/login');			
-			}
-		
-		function test2(){
-
-		var jqxhr = $.get("/login", function(data) {
-    $('#flash_content').html(data);}).success(function() { alert("second success"); }).error(function(xhr, status, ex) { if (xhr) {
-      msg = "readyState is " + xhr.readyState + ". ";
-    }
-    if (ex) {
-      msg += ex.name + ' - ' + ex.message;
-    }
-    alert("ERROR " + msg); }).complete(function() { alert("complete"); });}
-		
-		$(document).ready(function() {
-		$("#login").click(function(event){
-		 event.preventDefault(); // Prevent link from following its href
-  		test();
-		});});
+			$(document).ready(function() {
+				$("#login").click(function(event){
+		 			event.preventDefault(); // Prevent link from following its href
+  					userlogin();
+				});
+			});
 		</script>	
 		
 		
