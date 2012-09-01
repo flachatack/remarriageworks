@@ -1,0 +1,2 @@
+$('#flash_content').fadeOut("fast", function() { $('#flash_content').hide().fadeIn("fast").html('<h1>A confirmation email has been sent to the provided email address</h1>')});
+//<%= escape_javascript(render(:partial => 'form')) %> can be used to show partials in html()

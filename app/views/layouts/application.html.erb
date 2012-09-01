@@ -12,14 +12,21 @@
 		
 		<script type="text/javascript">
 		
-		function userlogin() {		
+		function userLogin() {		
 			$.get('/login')
+		;}
+		function userRegister() {		
+			$.get('/admin/users/new')
 		;}
 		
 		$(document).ready(function() {
 			$("#login").click(function(event){
 	 			event.preventDefault(); // Prevent link from following its href
-  					userlogin();
+  					userLogin();
+			});
+			$("#register").click(function(event){
+	 			event.preventDefault(); // Prevent link from following its href
+  					userRegister();
 			});
 		});
 		

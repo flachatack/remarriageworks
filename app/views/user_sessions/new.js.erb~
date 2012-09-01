@@ -1,1 +1,1 @@
-$('#flash_content').html('<%= escape_javascript(render(:partial => 'form')) %>');
+$('#flash_content').fadeOut("slow", function() { $('#flash_content').hide().fadeIn("slow").html('<%= escape_javascript(render(:partial => 'form')) %>')});

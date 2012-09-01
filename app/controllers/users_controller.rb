@@ -36,6 +36,7 @@ before_filter :require_admin, :only => [:index, :show]
     @user = User.new
 
     respond_to do |format|
+    	format.js
       format.html # new.html.erb
       format.json { render json: @user }
     end
@@ -53,6 +54,7 @@ before_filter :require_admin, :only => [:index, :show]
 
     respond_to do |format|
       if @user.save
+        format.js
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
