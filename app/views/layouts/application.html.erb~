@@ -3,8 +3,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   	<title>reArticles by RemarriageWorks</title>
+  		<%= favicon_link_tag 'favicon.ico' %>
   		<%= stylesheet_link_tag "layout" %>
   	  	<%= stylesheet_link_tag "class" %>
+ 	  	<%= stylesheet_link_tag "jquery-ui-1.8.23.custom" %>
 		<%= javascript_include_tag 'application' %>
 		<%= csrf_meta_tags %>
 		
@@ -19,6 +21,7 @@
 			$.get('/admin/users/new')
 		;}
 		
+		
 		$(document).ready(function() {
 			$("#login").click(function(event){
 	 			event.preventDefault(); // Prevent link from following its href
@@ -28,6 +31,11 @@
 	 			event.preventDefault(); // Prevent link from following its href
   					userRegister();
 			});
+			$(function() {
+				$("button").button();
+				$("#loginButton").button();
+			});
+
 		});
 		
 		</script>	
@@ -45,11 +53,7 @@
                	<td><%= image_tag('reMarriage_logo.gif', :size => "344x80") %></td>
                   <td><div id="toplogin" style="text-align: right;">
                   <%= render :partial => "layouts/login" %>      
-		    			<div>
-   			  	   	<p id="notice"><%= notice %></p>
-    						<p id="alert"><%= alert %></p>
-  					   </div>
-                  </div><br /></td>
+                  </div></td>
                </tr>
             </tbody>
         </table>

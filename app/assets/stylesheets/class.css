@@ -254,7 +254,7 @@ height:202px;
 background-color:#e4dfd9;
 border-right:1px solid #b1b7b2;
 padding:20px 15px 5px 25px;
-background-image:url(images/small_content_02_bg.gif);
+#background-image:url(images/small_content_02_bg.gif);
 }
 
 .small_content_block_02 h1{
@@ -710,7 +710,7 @@ color:#2a5c5b;
 	background-color:#e4dfd9;
 	border-right:1px solid #b1b7b2;
 	padding:20px 15px 5px 25px;
-	background-image:url(images/small_content_02_bg.gif);
+	#background-image:url(images/small_content_02_bg.gif);
 }
 
 .contest h1{

@@ -1,7 +1,12 @@
+
 <% if current_user %>
 <%= link_to "Edit Profile", edit_user_path(current_user.id), :id => "editprofile", :remote => true %>
 <%= link_to "Logout", :logout, :id => "logout", :remote => true %>
 <% else %>
-<%= link_to "Register", new_user_path, :id => "register", :remote => true %> |
-<%= link_to "Login", :login, :id => "login", :remote => true %>
+<button id="register">Register</button>
+<button id="login">Login</button><br/>
+<%= render :partial => "user_sessions/loginForm" %>
+<div id="loginBox"></div>
+<!--#<%= link_to "Register", new_user_path, :id => "register", :remote => true %>| --> 
+<!--#<%= link_to "Login", :login, :id => "login", :remote => true %> -->
 <% end %>
