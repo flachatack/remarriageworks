@@ -1,0 +1,21 @@
+<% if @contents != [] %>
+<table>
+<% @contents.each do |c| %>
+<tr>
+	<td><%= image_tag c.avatar.url(:thumb) %></td>
+	<td>	
+		<h3>&nbsp&nbsp<%= c.title %></h3>
+		<p>&nbsp&nbsp<span>Posted on: <%= c.created_at.strftime("%d %b. %Y") %></span><span> by AUTHOR (to change eventually)</span></p>
+		<div class="entry">	
+			<p class="links">&nbsp&nbsp<%= link_to "Read More", :controller => "contents", :action => "show", :id => c.id %>
+			&nbsp<a href="#" title="b0x" class="comments">Comments</a>
+			</p>
+  		</div>
+  	</td>
+</tr>
+<% end %>
+</table>
+<% else %>
+	<h3 class="title">No content of this type exists :( but you should add some :)</h3>
+<% end %>
+

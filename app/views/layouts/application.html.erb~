@@ -15,13 +15,32 @@
 		<script type="text/javascript">
 		
 		function userLogin() {		
+			unhighlight();
 			$.get('/login')
 		;}
 		function userRegister() {		
+			unhighlight();
 			$.get('/admin/users/new')
 		;}
-		
-		
+		function getPage(page){
+			$.get(page.toString());
+		}
+		function highlight(name){
+				$("#articleLink").css('background-color', '#087876');
+				$("#homeLink").css('background-color', '#087876');
+				$("#blogLink").css('background-color', '#087876');
+				$("#videoLink").css('background-color', '#087876');
+				$("#externalLink").css('background-color', '#087876');		
+			 	$(name.toString()).css('background-color', '#024846');
+		}
+		function unhighlight(){
+				$("#articleLink").css('background-color', '#087876');
+				$("#homeLink").css('background-color', '#087876');
+				$("#blogLink").css('background-color', '#087876');
+				$("#videoLink").css('background-color', '#087876');
+				$("#externalLink").css('background-color', '#087876');
+		}
+	
 		$(document).ready(function() {
 			$("#login").click(function(event){
 	 			event.preventDefault(); // Prevent link from following its href
@@ -31,6 +50,32 @@
 	 			event.preventDefault(); // Prevent link from following its href
   					userRegister();
 			});
+			$("#articleLink").click(function(event){
+	 			event.preventDefault(); // Prevent link from following its href
+	 				highlight("#articleLink");
+  					getPage('/manager/contents?content_type=article');
+			});
+			$("#blogLink").click(function(event){
+	 			event.preventDefault(); // Prevent link from following its href
+	 				highlight("#blogLink");
+  					getPage('/manager/contents?content_type=blog');
+			});
+			$("#videoLink").click(function(event){
+	 			event.preventDefault(); // Prevent link from following its href
+	 				highlight("#videoLink");
+  					getPage('/manager/contents?content_type=video');
+			});
+			$("#externalLink").click(function(event){
+	 			event.preventDefault(); // Prevent link from following its href
+	 				highlight("#externalLink");
+  					getPage('/manager/contents?content_type=external');
+			});
+			$("#homeLink").click(function(event){
+	 			event.preventDefault(); // Prevent link from following its href
+	 				highlight("#homeLink");
+  					getPage('/pages/home');
+			});			
+			$("#homeLink").hover(this.css('background-color', '#087876'););
 			$(function() {
 				$("button").button();
 				$("#loginButton").button();
@@ -65,7 +110,7 @@
       <!--#nav_01-->
       	<div id="nav_02">
         		<div id="nav_02_text">
-        			<%= @breadcrumbs %>
+        			<!--# <%= @breadcrumbs %>-->
         		</div>
         </div>
         		
@@ -139,9 +184,9 @@
         		<ul>
             	<li><a href="http://remarriageworks.com/contact">Contact Us</a></li>
             	<li><a href="http://www.remarriageworks.com/privacy">Privacy </a></li>
-        		</ul>
-        	</div>
-		</div>
+        	   </ul>
+        </div>
+	</div>
 	</div>
 </body>
 </html>

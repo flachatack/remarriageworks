@@ -1,0 +1,1 @@
+$('#flash_content').fadeOut("fast", function() { $('#flash_content').hide().fadeIn("fast").html('<%= escape_javascript(render(:partial => 'allContent')) %>')});

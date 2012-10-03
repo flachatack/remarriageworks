@@ -22,7 +22,13 @@ before_filter :require_admin, :only => [:new, :update, :create, :destroy, :edit]
 	preFind = Content.find_all_by_content_type(parameter)
  	if !(preFind == nil)
  		@contents = preFind
- 	end		 	
+ 	end		
+ 	respond_to do |format|
+        format.js 
+        format.html {  }
+        format.json {  }
+        format.xml  { head :ok }
+   end 	
   end
 
   def edit

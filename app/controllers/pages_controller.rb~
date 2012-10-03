@@ -1,16 +1,17 @@
 class PagesController < ApplicationController
-before_filter :require_admin, :except => [:new, :update, :create, :destroy, :edit]
 
   
   def home
+  	respond_to do |format|
+        format.js 
+        format.html {}
+        format.json {  }
+        format.xml  { head :ok }
+      end
   end
 
-  def manager_console
-	@contents = Content.all
-  end
 
-  def index
-	@contents = Content.all
-	respond_to do |format|
-
+  
+  
+  
 end
